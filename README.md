@@ -74,7 +74,7 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 * **"beforeOaky"**: This allows for leading text before the pattern.
 
-Both can be enabled at the same time.
+* Both can be enabled at the same time.
 
 #### Examples: 
 
