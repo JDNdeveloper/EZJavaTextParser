@@ -23,56 +23,56 @@ The same technique can be used for reading from a file.
 
 Enjoy!
 
--**Jayden Navarro**
+**Jayden Navarro**
 
-**P.S.:** These classes were built for Java SE 7.
+**P.S.** These classes were built for Java SE 7.
 
 ## How To Use:
 
-Put the EZJavaTextParser.java into the same folder as your project. Create an object instance of this
-class. For instance: "EZJavaTextParser EZ = new EZJavaTextParser(EXAMPLE_PATTERN);".
+Put the **EZJavaTextParser.java** into the same folder as your project. Create an object instance of this
+class. For instance: **"EZJavaTextParser EZ = new EZJavaTextParser(EXAMPLE_PATTERN);"**.
 
 In the constructor make sure to put your pattern, which I talk about below.
 
-To test to see if a String matches this pattern call "EZ.matches(EXAMPLE_STRING);".
+To test to see if a String matches this pattern call **"EZ.matches(EXAMPLE_STRING);"**.
 This function will return back to you true if it matches the pattern and false if it does not.
 
-To grab the words or integers from the string call "EZ.getIntegers()" and "EZ.getWords();". This 
+To grab the words or integers from the string call **"EZ.getIntegers()"** and **"EZ.getWords();"*. This 
 functions return an integer array and a String array, respectively.
 
-The EZJavaTextParserTester.java file I included shows some examples for this class.
+The **EZJavaTextParserTester.java** file I included shows some examples for using this class.
 
 ## Pattern Keywords:
 
-* "word": Text that only contains upper and lowercase English alphabet letters. Ex: "Hello"
+* **"word"**: Text that only contains upper and lowercase English alphabet letters. Ex: "Hello"
 
-* "integer": An integer. Ex: "546"
+* **"integer"**: An integer. Ex: "546"
 
-* "double": Two integers seperated by a period. Ex: "452.07"
+* **"double"**: Two integers seperated by a period. Ex: "452.07"
 
 
 ## Examples of Patterns:
 
-* EX 1: "word: integer". This would require a word followed by ": " and then an integer.
+* Ex 1: **"word: integer"**. This would require a word followed by ": " and then an integer.
 
-	Works: "Hello: 45", "bob: 8980"
+	**Works:** "Hello: 45", "bob: 8980"
 
-	Doesn't Work: "Hello:45", "45: 89"
+	**Doesn't Work:** "Hello:45", "45: 89"
 
-* EX 2: "double.bob.integer". This would require a double followed by a period followed by "bob" 
+* Ex 2: **"double.bob.integer"**. This would require a double followed by a period followed by "bob" 
 followed by another period and then another double.
 
-	Works: "45.67.bob.23.89", "675.2.bob.0.45"
+	**Works:** "45.67.bob.23.89", "675.2.bob.0.45"
 
-	Doesn't work: "456.bob.23.67", "456.r.bob.56", "45.67.BOB.23.89"
+	**Doesn't work:** "456.bob.23.67", "456.r.bob.56", "45.67.BOB.23.89"
 
 ## Flags: 
 
 You set these flags in the constructor or using setPattern(String, boolean, boolean).
 
-* "afterOkay": This allows for there to be trailing text after the pattern.
+* **"afterOkay"**: This allows for there to be trailing text after the pattern.
 
-* "beforeOaky": This allows for leading text before the pattern.
+* **"beforeOaky"**: This allows for leading text before the pattern.
 
 Both can be enabled at the same time.
 
