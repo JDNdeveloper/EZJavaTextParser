@@ -101,7 +101,7 @@ and the flags to their corresponding values.
 
 * **void setPattern(String args);** This sets the pattern to args and resets integers and words lists.
 
-* **void setPattern(String args);** boolean after, boolean before); This sets the flags and the pattern.
+* **void setPattern(String args, boolean after, boolean before);** This sets the flags and the pattern.
 
 * **boolean matches(String s);** This checks to see if 's' matches the pattern. It also takes into consideration
 the flags. It returns true if 's' matches the pattern. It returns false if it does not. It also fills
