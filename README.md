@@ -13,7 +13,7 @@ EZJavaTextParser
 A one class easy String parser. It allows you to easily set a pattern and then check to see if
 Strings match this pattern.
 
-I built this so it would be easy for intro/intermediate CS students to use to gather and parse input.
+I wrote this so it would be easy for intro/intermediate CS students to use to gather and parse input.
 Because of this, some of the language I use may sound like oversimplification to some.
 
 If you want to use this to parse user input, I suggest collecting a whole line of user input
@@ -44,27 +44,27 @@ The EZJavaTextParserTester.java file I included shows some examples for this cla
 
 ## Pattern Keywords:
 
-* "word": Text that only contains upper and lowercase English alphabet letters. EX: "Hello"
+* "word": Text that only contains upper and lowercase English alphabet letters. Ex: "Hello"
 
-* "integer": An integer. EX: "546"
+* "integer": An integer. Ex: "546"
 
-* "double": Two integers seperated by a period. EX: "452.07"
+* "double": Two integers seperated by a period. Ex: "452.07"
 
 
 ## Examples of Patterns:
 
 * EX 1: "word: integer". This would require a word followed by ": " and then an integer.
 
-WORK: "Hello: 45", "bob: 8980"
+	Works: "Hello: 45", "bob: 8980"
 
-DON't WORK: "Hello:45", "45: 89"
+	Doesn't Work: "Hello:45", "45: 89"
 
 * EX 2: "double.bob.integer". This would require a double followed by a period followed by "bob" 
 followed by another period and then another double.
 
-WORK: "45.67.bob.23.89", "675.2.bob.0.45"
+	Works: "45.67.bob.23.89", "675.2.bob.0.45"
 
-DON't WORK: "456.bob.23.67", "456.r.bob.56", "45.67.BOB.23.89"
+	Doesn't work: "456.bob.23.67", "456.r.bob.56", "45.67.BOB.23.89"
 
 ## Flags: 
 
@@ -76,7 +76,7 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 Both can be enabled at the same time.
 
-Examples: 
+# Examples: 
 
 EZJavaTextParser(pattern, true, false) would allow trailing text but not leading text.
 
