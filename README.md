@@ -78,9 +78,16 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 #### Examples: 
 
+* Format is: **(pattern, afterOkay, beforeOkay)**
+
 * **EZJavaTextParser(pattern, true, false);** would allow trailing text but not leading text.
 
 * **setPattern(pattern, false, true);** would allow leading text but not trailing text.
+
+* **EZJavaTextParser(pattern, true, true);** would allow trailing text but and leading text.
+
+* **setPattern(pattern, false, false);** wouldn't allow for trailing text nor leading text.
+This is is what it is set to by default in the constructors.
 
 ## Functions:
 
