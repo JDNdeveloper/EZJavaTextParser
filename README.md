@@ -23,9 +23,9 @@ The same technique can be used for reading from a file.
 
 Enjoy!
 
--Jayden Navarro
+-**Jayden Navarro**
 
-P.S.: These classes were built for Java SE 7.
+**P.S.:** These classes were built for Java SE 7.
 
 ## How To Use:
 
@@ -76,35 +76,35 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 Both can be enabled at the same time.
 
-# Examples: 
+#### Examples: 
 
-EZJavaTextParser(pattern, true, false) would allow trailing text but not leading text.
+**EZJavaTextParser(pattern, true, false);** would allow trailing text but not leading text.
 
-setPattern(pattern, false, true) would allow leading text but not trailing text.
+**setPattern(pattern, false, true);** would allow leading text but not trailing text.
 
 ## Functions:
 
-* EZJavaTextParser(); This sets both flags to false and intializes other variables 
+**EZJavaTextParser();** This sets both flags to false and intializes other variables 
 to defaults.
 
-* EZJavaTextParser(String args); This sets the pattern to args and sets the flags to false.
+**EZJavaTextParser(String args);** This sets the pattern to args and sets the flags to false.
 
-* EZJavaTextParser(String args, boolean after, boolean before); This sets the pattern to args
+**EZJavaTextParser(String args, boolean after, boolean before);** This sets the pattern to args
 and the flags to their corresponding values.
 
-* void setPattern(String args); This sets the pattern to args and resets integers and words lists.
+**void setPattern(String args);** This sets the pattern to args and resets integers and words lists.
 
-* void setPattern(String args); boolean after, boolean before); This sets the flags and the pattern.
+**void setPattern(String args);** boolean after, boolean before); This sets the flags and the pattern.
 
-* boolean matches(String s); This checks to see if 's' matches the pattern. It also takes into consideration
+**boolean matches(String s);** This checks to see if 's' matches the pattern. It also takes into consideration
 the flags. It returns true if 's' matches the pattern. It returns false if it does not. It also fills
 the integers and words ArrayLists with the words and integers (and doubles) that appeared in 's'.
 
-* Integer[] getIntegers(); This returns an integer array of the integers (and doubles). To those of you 
+**Integer[] getIntegers();** This returns an integer array of the integers (and doubles). To those of you 
 unfamiliar with 'Integer', you can use it just how you would any 'int' without having to worry about
 any casting or conversion.
 
-* String[] getWords(); This returns a String array of the words.
+**String[] getWords();** This returns a String array of the words.
 
-* String[] getPattern(); This returns a String array with the pattern. Every slot in the array is either
+**String[] getPattern();** This returns a String array with the pattern. Every slot in the array is either
 a keyword or a delimiter that seperates the keywords.
