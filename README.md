@@ -72,7 +72,7 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 * **"afterOkay"**: This allows for there to be trailing text after the pattern.
 
-* **"beforeOaky"**: This allows for leading text before the pattern.
+* **"beforeOkay"**: This allows for leading text before the pattern.
 
 * Both can be enabled at the same time.
 
@@ -84,9 +84,9 @@ You set these flags in the constructor or using setPattern(String, boolean, bool
 
 * **setPattern(pattern, false, true);** would allow leading text but not trailing text.
 
-* **EZJavaTextParser(pattern, true, true);** would allow trailing text but and leading text.
+* **EZJavaTextParser(pattern, true, true);** would allow trailing text and leading text.
 
-* **setPattern(pattern, false, false);** wouldn't allow for trailing text nor leading text.
+* **setPattern(pattern, false, false);** wouldn't allow trailing text nor leading text.
 This is is what it is set to by default in the constructors.
 
 ## Functions:
