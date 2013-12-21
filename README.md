@@ -44,22 +44,22 @@ The EZJavaTextParserTester.java file I included shows some examples for this cla
 
 ## Pattern Keywords:
 
-"word": Text that only contains upper and lowercase English alphabet letters. EX: "Hello"
+* "word": Text that only contains upper and lowercase English alphabet letters. EX: "Hello"
 
-"integer": An integer. EX: "546"
+* "integer": An integer. EX: "546"
 
-"double": Two integers seperated by a period. EX: "452.07"
+* "double": Two integers seperated by a period. EX: "452.07"
 
 
 ## Examples of Patterns:
 
-# EX 1: "word: integer". This would require a word followed by ": " and then an integer.
+* EX 1: "word: integer". This would require a word followed by ": " and then an integer.
 
 WORK: "Hello: 45", "bob: 8980"
 
 DON't WORK: "Hello:45", "45: 89"
 
-# EX 2: "double.bob.integer". This would require a double followed by a period followed by "bob" 
+* EX 2: "double.bob.integer". This would require a double followed by a period followed by "bob" 
 followed by another period and then another double.
 
 WORK: "45.67.bob.23.89", "675.2.bob.0.45"
@@ -70,9 +70,9 @@ DON't WORK: "456.bob.23.67", "456.r.bob.56", "45.67.BOB.23.89"
 
 You set these flags in the constructor or using setPattern(String, boolean, boolean).
 
-# after: This allows for there to be trailing text after the pattern.
+* "afterOkay": This allows for there to be trailing text after the pattern.
 
-# before: This allows for leading text before the pattern.
+* "beforeOaky": This allows for leading text before the pattern.
 
 Both can be enabled at the same time.
 
@@ -84,27 +84,27 @@ setPattern(pattern, false, true) would allow leading text but not trailing text.
 
 ## Functions:
 
-EZJavaTextParser(); This sets both flags to false and intializes other variables 
+* EZJavaTextParser(); This sets both flags to false and intializes other variables 
 to defaults.
 
-EZJavaTextParser(String args); This sets the pattern to args and sets the flags to false.
+* EZJavaTextParser(String args); This sets the pattern to args and sets the flags to false.
 
-EZJavaTextParser(String args, boolean after, boolean before); This sets the pattern to args
+* EZJavaTextParser(String args, boolean after, boolean before); This sets the pattern to args
 and the flags to their corresponding values.
 
-void setPattern(String args); This sets the pattern to args and resets integers and words lists.
+* void setPattern(String args); This sets the pattern to args and resets integers and words lists.
 
-void setPattern(String args); boolean after, boolean before); This sets the flags and the pattern.
+* void setPattern(String args); boolean after, boolean before); This sets the flags and the pattern.
 
-boolean matches(String s); This checks to see if 's' matches the pattern. It also takes into consideration
+* boolean matches(String s); This checks to see if 's' matches the pattern. It also takes into consideration
 the flags. It returns true if 's' matches the pattern. It returns false if it does not. It also fills
 the integers and words ArrayLists with the words and integers (and doubles) that appeared in 's'.
 
-Integer[] getIntegers(); This returns an integer array of the integers (and doubles). To those of you 
+* Integer[] getIntegers(); This returns an integer array of the integers (and doubles). To those of you 
 unfamiliar with 'Integer', you can use it just how you would any 'int' without having to worry about
 any casting or conversion.
 
-String[] getWords(); This returns a String array of the words.
+* String[] getWords(); This returns a String array of the words.
 
-String[] getPattern(); This returns a String array with the pattern. Every slot in the array is either
+* String[] getPattern(); This returns a String array with the pattern. Every slot in the array is either
 a keyword or a delimiter that seperates the keywords.
