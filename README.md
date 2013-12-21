@@ -34,7 +34,7 @@ Enjoy!
 ## How To Use:
 
 Put the **EZJavaTextParser.java** into the same folder as your project. Create an object instance of this
-class. For instance: **"EZJavaTextParser EZ = new EZJavaTextParser(EXAMPLE_PATTERN);"**.
+class. For example: **"EZJavaTextParser EZ = new EZJavaTextParser(EXAMPLE_PATTERN);"**.
 
 In the constructor make sure to put your pattern, which I talk about below.
 
