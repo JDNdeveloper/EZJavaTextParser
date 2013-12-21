@@ -14,7 +14,7 @@ A one class easy String parser. It allows you to easily set a pattern and then c
 Strings match this pattern.
 
 **I wrote this so it would be easy for intro/intermediate CS students to gather and parse input.**
-Because of this, some of the language I use may sound like oversimplification to some.
+Because of this, the language I use may sound like oversimplification to some.
 
 If you want to use this to parse user input, I suggest collecting a whole line of user input
 and then passing that into this program using **EZObject_EXAMPLE.matches(userInputString);**
