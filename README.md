@@ -13,7 +13,7 @@ EZJavaTextParser
 A one class easy String parser. It allows you to easily set a pattern and then check to see if
 Strings match this pattern.
 
-I wrote this so it would be easy for **intro/intermediate** CS students to gather and parse input.
+**I wrote this so it would be easy for intro/intermediate CS students to gather and parse input.**
 Because of this, some of the language I use may sound like oversimplification to some.
 
 If you want to use this to parse user input, I suggest collecting a whole line of user input
@@ -35,7 +35,7 @@ class. For instance: **"EZJavaTextParser EZ = new EZJavaTextParser(EXAMPLE_PATTE
 In the constructor make sure to put your pattern, which I talk about below.
 
 To test to see if a String matches this pattern call **"EZ.matches(EXAMPLE_STRING);"**.
-This function will return back to you true if it matches the pattern and false if it does not.
+This function will return back to you **true** if it matches the pattern and **false** if it does not.
 
 To grab the words or integers from the string call **"EZ.getIntegers()"** and **"EZ.getWords();"**. These 
 functions return an integer array and a String array, respectively.
